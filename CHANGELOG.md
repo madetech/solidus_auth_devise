@@ -1,5 +1,23 @@
 ## Solidus Auth Devise v1.5.0 (master, unreleased)
 
+*   Devise dependency updates
+
+    The locked versions of Devise and Devise-Encryptable have been updated.
+    Devise, in particular, has been bumped to a new major version, which removes
+    support for the following:
+
+    - Rails 3.2. and 4.0
+    - Ruby 1.9 and 2.0
+
+    These losses are deemed acceptable, as Solidus' core itself does not
+    support any of these versions.
+
+    For more details on the changes, see the Devise changelog:
+    https://github.com/plataformatec/devise/blob/master/CHANGELOG.md
+
+    Similar changes in `devise-encryptable`, with details in the changelog:
+    https://github.com/plataformatec/devise-encryptable/blob/master/Changelog.md
+
 ## Solidus Auth Devise v1.4.0 (2016-05-16)
 
 * Update hash syntax for routes.rb
